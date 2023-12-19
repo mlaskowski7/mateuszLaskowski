@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="img/PageIcon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e03b286a27.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Menu Overlay -->
+  <div class="overlay overlay-slide-left" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+        <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#skills">Skills</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#projects">Projects</a></li>
+        <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Menu Bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- Sections -->
+  <section id="home">
+    <a href="https://github.com/mlaskowski7" target="_blank">My github profile</a>
+    <div class="welcome">
+      <h1>Welcome to my portfolio website</h1>
+      <p>My name is Mateusz and I am a would-be web developer</p>
+    </div>
+  </section>
+  <section id="about">
+    <h1>About Me</h1>
+    
+    <p>I am a Computer Science student at the Polish-Japanese Academy of Computer Science in Warsaw, pursuing my studies in English. As part of my academic journey, I am actively working towards becoming a Back-End Developer. I have completed Meta Back End Developer Professional Certificate. I possess advanced proficiency in Python, Java and have a solid understanding of SQL-based databases, with practical experience in MySQL. Proficient in Version Control tools such as Git and GitHub, I am well-versed in collaborative development practices. Additionally, I have hands-on experience with the DJANGO and DJANGO REST FRAMEWORK frameworks. Currently, I am preparing for the Azure Fundamentals certification exam to further expand my skill set. In the realm of Front-End development, I am familiar with fundamental tools such as HTML, CSS and JavaScript. Fluent in English at an advanced level (C1), as verified by the Cambridge Advanced English Certificate. I am committed to continuous learning and improvement and eager to gain practical experience through an internship as a Back-End or Front-End Developer.</p>
+    <div class="img-container">
+      <img src="img/MetaCert.png" alt="Meta Back End Developer Cert" title="Meta Back End Developer Certificate" id="meta-cert">
+      <img src="img/page1.png" alt="Cambridge CAE Cert" title="Cambridge Certificate of Advanced English">
+    </div>
+  </section>
+  <section id="skills">
+    <h1>My Skills</h1>
+    <p>Programming Languages: <i class="fa-brands fa-python" style="color:lightskyblue;"></i> <i class="fa-brands fa-java" style="color: #6F4E37;"></i> <span id="sql">SQL</span><i class="fa-brands fa-html5" style="color: red;"></i><i class="fa-brands fa-css3" style="color: #6292e4;"></i><i class="fa-brands fa-js" style="color: #e6df0f;"></i></p>
+    <p>Other Tools: Django, Django REST Framework, REST APIs, jQuery, Git, SQL, MySQL, Microsoft SQL Server, Linux, Bash</p>
+  </section>
+  <section id="projects">
+    <h1>My Projects</h1>
+    <p>Click on the project name to check out the project on my github pages domain, click on the language to inspect the github repository</p>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="table-info">
+            <th scope="col">Name</th>
+            <th scope="col">Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr> 
+          -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+   <!-- jquery cdn  -->
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <section id="contact">
+    <h1>How to contact me</h1>
+    <div class="contact-container">
+      <span><i class="fa-solid fa-square-phone"></i>:+48 536 540 735</span>
+      <span><i class="fa-solid fa-square-envelope"></i>: mtlaskowski7@gmail.com</span>
+    </div>
+
+    <h1>My Social Media Links</h1>
+    <div class="social-media-container">
+      <span><a href="https://www.linkedin.com/in/mateusz-laskowski-42472a269/"><i class="fa-brands fa-linkedin"></i>:Mateusz Laskowski</a></span>
+      <span><a href="https://github.com/mlaskowski7"><i class="fa-brands fa-github"></i>:mlaskowski7</a></span>
+    </div>
+  </section>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
