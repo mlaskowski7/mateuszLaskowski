@@ -368,9 +368,31 @@ h1{
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  #skills h1{
+    font-size: 40px;
+  }
+
+  #skills p{
+    font-size: 20px;
+  } 
+  
+  #skills p i{
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
   section#home a {
     top: 1rem;
     left: 1rem;
+  }
+
+  section#contact {
+    font-size: 20px;
   }
 
   .menu-bars {
@@ -386,6 +408,7 @@ h1{
     width: 95%;
     font-size: 15px;
   }
+
 
 
 }
