@@ -366,6 +366,12 @@ h1{
   width: 500px;
 }
 
+@media (max-width: 900px){
+  #about{
+    font-size: 10px;
+  }
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
 
