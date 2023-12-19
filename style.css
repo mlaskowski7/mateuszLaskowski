@@ -374,22 +374,27 @@ h1{
   }
 
   #skills h1{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #skills p{
-    font-size: 20px;
+    font-size: 10px;
   } 
   
   #skills p i{
     margin-left: 10px;
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  section{
+    font-size: 10px;
   }
 
   section#home a {
     top: 1rem;
     left: 1rem;
   }
+
 
   section#contact {
     font-size: 20px;
