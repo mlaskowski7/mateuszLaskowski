@@ -427,10 +427,16 @@ h1{
     display: none;
   }
 
+  .tables-wrapper{
+    flex-direction: column;
+  }
+
   .table-responsive{
     font-size: 10px;
     margin-right: 0;
   }
+
+
 
 
 
