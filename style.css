@@ -428,9 +428,10 @@ h1{
   }
 
   .table-responsive{
-    width: 95%;
-    font-size: 15px;
+    font-size: 10px;
+    margin-right: 0;
   }
+
 
 
 
