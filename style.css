@@ -278,9 +278,15 @@ section#projects {
   
 }
 
+.tables-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
 .table-responsive{
   display: flex;
   justify-content: center;
+  margin-right: 40px;
 }
 
 .table-info {
@@ -292,6 +298,7 @@ section#projects {
   padding: 10px; 
   color: #047070;
 }
+
 
 
 td{

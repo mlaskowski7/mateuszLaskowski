@@ -54,21 +54,26 @@ request.onload = function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
 
-  var statusHTML = '';
+  var statusHTML_frontend = '';
+  var statusHTML_fullstack = '';
   $.each(data, function(i, status) {
     if(status.language != null && !status.private){
-        statusHTML += '<tr>';
         if(status.language === 'JavaScript' || status.language === 'HTML' || status.language === 'CSS'){
-            statusHTML += `<td><a href="https://mlaskowski7.github.io/${status.name}" target ="_blank">${status.name}</a></td>`;
+            statusHTML_frontend += '<tr>';
+            statusHTML_frontend += `<td><a href="https://mlaskowski7.github.io/${status.name}" target ="_blank">${status.name}</a></td>`;
+            statusHTML_frontend += `<td><a href="https://github.com/mlaskowski7/${status.name}" target ="_blank">${status.language}</a></td>`;
+            statusHTML_frontend += '</tr>';
         } else{
-            statusHTML += `<td>${status.name}</td>`;
+            statusHTML_fullstack += '<tr>';
+            statusHTML_fullstack += `<td>${status.name}</td>`;
+            statusHTML_fullstack += `<td><a href="https://github.com/mlaskowski7/${status.name}" target ="_blank">${status.language}</a></td>`;
+            statusHTML_fullstack += '</tr>';
         }
-        statusHTML += `<td><a href="https://github.com/mlaskowski7/${status.name}" target ="_blank">${status.language}</a></td>`;
-        statusHTML += '</tr>';
     }
     
   });
-  $('tbody').html(statusHTML);
+  $('tbody#frontend').html(statusHTML_frontend);
+  $('tbody#fullstack').html(statusHTML_fullstack);
 }
 
 // Send request
