@@ -56,7 +56,7 @@ request.onload = function () {
 
   var statusHTML = '';
   $.each(data, function(i, status) {
-    if(status.language != null){
+    if(status.language != null && !status.private){
         statusHTML += '<tr>';
         if(status.language === 'JavaScript' || status.language === 'HTML' || status.language === 'CSS'){
             statusHTML += `<td><a href="https://mlaskowski7.github.io/${status.name}" target ="_blank">${status.name}</a></td>`;
